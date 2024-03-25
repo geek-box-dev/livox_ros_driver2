@@ -205,13 +205,13 @@ LiDAR Configurations (such as ip, port, data type... etc.) can be set via a json
       "log_data_port": 59000
     },
     "host_net_info" : {
-      "cmd_data_ip" : "192.168.1.5",  # host ip (it can be revised)
+      "cmd_data_ip" : "192.168.1.8",  # host ip (it can be revised)
       "cmd_data_port": 56000,
       "push_msg_ip": "",
       "push_msg_port": 0,
-      "point_data_ip": "192.168.1.5",  # host ip
+      "point_data_ip": "192.168.1.8",  # host ip
       "point_data_port": 57000,
-      "imu_data_ip" : "192.168.1.5",  # host ip
+      "imu_data_ip" : "192.168.1.8",  # host ip
       "imu_data_port": 58000,
       "log_data_ip" : "",
       "log_data_port": 59000
@@ -266,13 +266,13 @@ For more infomation about the HAP config, please refer to:
       "log_data_port": 59000
     },
     "host_net_info" : {
-      "cmd_data_ip" : "192.168.1.5",  # host ip
+      "cmd_data_ip" : "192.168.1.8",  # host ip
       "cmd_data_port": 56000,
       "push_msg_ip": "",
       "push_msg_port": 0,
-      "point_data_ip": "192.168.1.5",  # host ip
+      "point_data_ip": "192.168.1.8",  # host ip
       "point_data_port": 57000,
-      "imu_data_ip" : "192.168.1.5",  # host ip
+      "imu_data_ip" : "192.168.1.8",  # host ip
       "imu_data_port": 58000,
       "log_data_ip" : "",
       "log_data_port": 59000
@@ -287,13 +287,13 @@ For more infomation about the HAP config, please refer to:
       "log_data_port": 56500
     },
     "host_net_info" : {
-      "cmd_data_ip" : "192.168.1.5",  # host ip
+      "cmd_data_ip" : "192.168.1.8",  # host ip
       "cmd_data_port": 56101,
-      "push_msg_ip": "192.168.1.5",  # host ip
+      "push_msg_ip": "192.168.1.8",  # host ip
       "push_msg_port": 56201,
-      "point_data_ip": "192.168.1.5",  # host ip
+      "point_data_ip": "192.168.1.8",  # host ip
       "point_data_port": 56301,
-      "imu_data_ip" : "192.168.1.5",  # host ip
+      "imu_data_ip" : "192.168.1.8",  # host ip
       "imu_data_port": 56401,
       "log_data_ip" : "",
       "log_data_port": 56501
@@ -315,7 +315,7 @@ For more infomation about the HAP config, please refer to:
       }
     },
     {
-      "ip" : "192.168.1.12",  # ip of the Mid360 you want to config
+      "ip" : "192.168.1.102",  # ip of the Mid360 you want to config
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
       "extrinsic_parameter" : {
