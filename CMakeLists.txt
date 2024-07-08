@@ -4,6 +4,7 @@ if(ROS_EDITION STREQUAL "ROS1")
   # Copyright(c) 2019 livoxtech limited.
 
   cmake_minimum_required(VERSION 3.0)
+  cmake_policy(SET CMP0144 NEW)
 
 
   #---------------------------------------------------------------------------------------
@@ -249,9 +250,9 @@ else(ROS_EDITION STREQUAL "ROS2")
   find_library(LIVOX_LIDAR_SDK_LIBRARY liblivox_lidar_sdk_shared.so /usr/local/lib REQUIRED)
 
   ##
-  find_path(LIVOX_LIDAR_SDK_INCLUDE_DIR
-    NAMES "livox_lidar_api.h" "livox_lidar_def.h"
-    REQUIRED)
+  ## find_path(LIVOX_LIDAR_SDK_INCLUDE_DIR
+  ##  NAMES "livox_lidar_api.h" "livox_lidar_def.h"
+  ##  REQUIRED)
 
   ## PCL library
   link_directories(${PCL_LIBRARY_DIRS})
@@ -279,7 +280,7 @@ else(ROS_EDITION STREQUAL "ROS2")
     src/call_back/livox_lidar_callback.cpp
   )
 
-  target_include_directories(${PROJECT_NAME} PRIVATE ${livox_sdk_INCLUDE_DIRS})
+  target_include_directories(${PROJECT_NAME} PRIVATE ${HOME}/Livox-SDK2/include)
 
   # get include directories of custom msg headers
   if(HUMBLE_ROS STREQUAL "humble")
